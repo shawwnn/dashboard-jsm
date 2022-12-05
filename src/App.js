@@ -10,7 +10,6 @@ import { useStateContext } from './contexts/ContextProvider';
 
 import './App.css'
 
-
 const App = () => {
   const { activeMenu } = useStateContext();
 
@@ -46,6 +45,8 @@ const App = () => {
             </div>
       
             <div>
+              <ThemeSettings />
+
               <Routes>
                 {/* Dashboard */}
                 <Route path="/" element={<Ecommerce />} />
